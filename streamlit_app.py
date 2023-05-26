@@ -6,7 +6,7 @@ from textblob import TextBlob
 st.title("Tweet Sentiment Analysis")
 
 # Load tweet data from CSV
-data = pd.read_csv("data.csv", names=["target", "ids", "date", "flag", "user", "text"], encoding="ISO-8859-1", chunksize= 100)
+data = pd.read_csv("training.1600000.processed.noemoticon.csv', names=["target", "ids", "date", "flag", "user", "text"], encoding="ISO-8859-1", chunksize= 100)
 
 # Display the loaded tweet data
 st.subheader("Loaded Tweet Data")
